@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int t;
+    cin>>t;
+    for(int i=0; i<t; i++)
+    {
+        int x,y;
+        cin>>x>>y;
+        cout<<(x/10)+y<<endl;
+    }
+    return 0;
+}
+
+/*
+eXplanation::
+
+>> take a integer input 't' as test case.
+
+>> Run cases with for loop t times.
+
+>> Input two integers x and y
+
+>> add "10% of x which is [x*(10/100)] = x/10" and "y".accumulate
+
+>> print
+*/
