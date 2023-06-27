@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int N;
+    cin>>N;         // user input N denoting the number of soldiers.
+
+    int a[N];
+    int lucky=0, unlucky=0;         // resetting value lucky and unlucky to zero.
+
+    for(int i=0; i<N; i++)
+    {
+        cin>>a[N];          // inputs the no. of weapons that the soldier is holding.
+    }
+    for(int i=0; i<N; i++)
+    {
+        if(a[N]%2==0)           // conditiona on the no. of weapons whether even or not.
+            lucky++;            // if even increasing the value of lucky by 1.
+        else
+            unlucky++;          // if not even increasing the value of unlucky by 1.
+
+    }
+    if(lucky > unlucky)         // condition for whose value is greater lucky or unlucky.
+        cout<<"READY FOR BATTLE"<<endl;         // if the army satisfies the conditions that Kattapa requires.
+    else
+        cout<<"NOT READY"<<endl;            // if the army does not satisfy the conditions that Kattapa requires.
+
+    return 0;
+}
