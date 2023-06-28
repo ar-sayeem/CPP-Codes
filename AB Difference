@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int A, B, Dif;
+    cin >> A >> B;
+    Dif = abs((A*B)-(A+B));
+    cout << Dif << endl;
+    return 0;
+}
+
+
+/*
+eXplanations::
+
+>> input A, B from user.
+
+>> The abs() function is used to get the absolute value of int data types.
+
+/*A negative number's absolute value is that number multiplied by -1, whereas the absolute value of a positive number and zero is that number itself. */
+
+>> print
+
+*/
