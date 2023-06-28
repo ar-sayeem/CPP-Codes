@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int t;
+    cin>>t;         // integer input 't' for test case.
+    while(t--)          // applying while loop.
+    {
+        int X, Y, Total;
+        cin >> X >> Y;          // integers X and Y, the number of 10 and 5 rupee respectively.
+        Total = (10*X + 5*Y);       // calculate Total by adding 10, X time and 5, Y times.
+        cout << Total << endl;          // output how much total money does Janmansh have.
+    }
+    return 0;
+}
+
+
+/* >> All explanations are provided as comments in the code. */
