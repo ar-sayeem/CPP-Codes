@@ -1,0 +1,28 @@
+#include <iostream>>
+using namespace std;
+
+int main()
+{
+    int t;
+    cin >> t;           // user input 't' for test case.
+    while(t--)          // using while loop.
+    {
+        int a, b, n;
+        cin >> a >> b;
+        (a<b) ? n=a : n=b;          // condition which is smaller between a and b.
+
+        int GCD = 1;            // setting initial GCD=1.
+        for(int i=1; i<=n; i++)
+        {
+            if(a%i==0 && b%i==0)            // condition of GCD for both number a and b.
+                GCD = i;
+        }
+        long long LCM = ((long long int)a * (long long int)b) / (long long int)GCD;         // converting to long long int data type.
+        cout << GCD << " " << LCM << endl;
+    }
+    return 0;
+}
+
+/*
+>> All explanations are provided as comments in the code.
+*/
