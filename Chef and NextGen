@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int t;
+    cin >> t;           // user input 't' for test case.
+
+    while(t--)           // using while loop.
+    {
+        int A, B, X, Y;
+        cin >> A >> B >> X >> Y;        // input >> A=Units of power, B=Years, X=Grams of Helium, Y=Units of power
+
+        if(A*B <= X*Y)              // Chefland Requires = A*B; Moon Provides = X*Y.
+            cout << "YES" << endl;          // condition satisfied.
+        else
+            cout << "NO" << endl;        // condition dissatisfied.
+    }
+    return 0;
+}
