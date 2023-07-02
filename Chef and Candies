@@ -1,27 +1,21 @@
-#include<bits/stdc++.h>         // "bits/stdc++.h" is a header file that include all the standard libraries.
+#include<iostream>
 using namespace std;
 
 int main()
 {
-    int T, Children, Candies, Packet=0, Remain=0;
-    cin >> T;
-    for(int i=0; i<=T; i++)         // For-loop for test case.
+    int t, N, X;
+        cin >> t;          // User input for test case.
+    while(t--)          // While-loop for test case.
     {
-        cin >> Children >> Candies;         // User input number of Children & Candies.
-        if(Candies > Children)          //
-        {
-            cout << 0 << endl;          // 1 candy to each is enough if Candies > Children, So no Packet need.
-        }
+        cin >> N >> X;               // User input number of Children & Candies.
+        if(N<X)                   // One candy to each is enough if Candies > Children, So no Packet need.
+            cout << 0 << endl;
+
+        else if((N-X)%4 == 0)
+            cout << (N-X)/4 << endl;      // Each Packet has 4 Candies.
+
         else
-        {
-            Remain = Children - Candies;            // Extra candies need.
-            Packet = Remain/4;              // Each Packet has 4 Candies.
-            if(Remain%4 != 0)           // Even if 1 Candy  is short, need another Packet, so increase number of Packets.
-            {
-                Packet++;
-            }
-            cout << Packet << endl;         // Print the number of Packets needed.
-        }
+            cout << ((N-X)/4)+1 << endl;    // Even if 1 Candy  is short, need another Packet, so increase number of Packets.
     }
     return 0;
 }
