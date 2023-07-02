@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int t, P, Q, R, S;
+    cin >> t;            // User input 't' for test case.
+    while(t--)
+    {
+        cin >> P >> Q >> R >> S;            // User inputs the profits made by A, B, C, D companies, respectively.
+        if( P>(Q+R+S) || Q>(P+R+S) || R>(Q+P+S) || S>(Q+R+P) )      // One company's profit is strictly greater than the sum of all other companies profits.
+            cout<<"YES"<<endl;          // Condition satisfied.
+        else
+            cout<<"NO"<<endl;        // Condition dissatisfied.
+    }
+    return 0;
+}
