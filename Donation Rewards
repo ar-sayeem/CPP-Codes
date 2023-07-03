@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int T;
+    cin >> T;
+    while(T--)
+    {
+        int X;
+        cin  >> X;
+        if(X<=3)                         // Less than or equal to 3 donations.
+            cout << "BRONZE" << endl;
+        if(X>3 && X<=6)                    // More than 3 and less than equal to 6 donations.
+            cout << "SILVER" << endl;
+        if(X>6)                          // More than 6 donations.
+            cout << "GOLD" << endl;
+    }
+    return 0;
+}
