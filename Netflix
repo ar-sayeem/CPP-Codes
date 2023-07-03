@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int t;
+    cin >> t;           // Input test case.
+    while(t--)
+    {
+        int A, B, C, X;
+        cin >> A >> B >> C >> X ;    // Input the amount that Alice, Bob, and Charlie have, and the cost of a Netflix subscription respectively.
+        if( (A+B)>=X || (B+C)>=X || (C+A)>=X )          // If any two can contribute to buy a Netflix subscription.
+            cout << "YES" << endl;          // Condition satisfied.
+        else
+            cout << "NO" << endl;         // Condition dissatisfied.
+    }
+    return 0;
+}
