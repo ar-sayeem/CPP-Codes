@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int T;
+    cin >> T;
+    while(T--)          // While-loop for test case 't'.
+    {
+        int N, fact=1;        // Initial factorial set as one.
+        cin >> N;
+        for(int i=1; i<=N; i++)
+        {
+            fact = fact * i;            // Condition.
+        }
+        cout << fact << endl;
+    }
+    return 0;
+}
