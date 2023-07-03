@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int N1, N2;
+    cin >> N1 >> N2;
+    if(N1>N2)
+        cout << (N1-N2) << endl;    // if the first number is greater than the second number, we print N1-N2.
+    else
+        cout << (N1+N2) << endl;       // Otherwise we print N1+N2.
+    return 0;
+}
