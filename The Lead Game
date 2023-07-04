@@ -1,0 +1,29 @@
+#include<iostream>
+#include<bits/stdc++.h>     // "bits/stdc++.h" is a header file that include all the standard libraries.
+using namespace std;
+
+int main()
+{
+    int N;          // number of rounds.
+    cin >> N;
+    int W=0;        // Winner declare.
+    int a=0, b=0;           // Cumulative scores.
+    int L=0;         // Maximum lead after each round.
+    while(N--)
+    {
+        int p1, p2;         // Scores of players.
+        cin >> p1 >> p2;
+        a += p1;          // Total score of p1.
+        b += p2;          // Total score of p1.
+        int Z = abs(a-b);        // Lead after every round.
+        if(Z>L)           // If the current lead exceeds the maximum lead, the winner will be replaced.
+        {
+            L = Z;          // Maximum lead update.
+            (a>b) ? W=1 : W=2;      // Winner update.
+        }
+    }
+    cout << W << " " << L << endl;
+    return 0;
+}
+
+/* Credit --> harshit311212 (Code Chef) */
