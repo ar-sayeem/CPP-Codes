@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int T;
+    cin >> T;           // User input test case 'T'.
+    while(T--)
+    {
+        int X, Y;           // X=the starting number, Y=the total number of moves.
+        cin  >> X >> Y;
+        if((X+Y)%2 == 0)                // If sum even.
+            cout << "Janmansh" << endl;      // Condition satisfied.
+        else
+            cout << "Jay" << endl;          // Condition dissatisfied.
+    }
+    return 0;
+}
