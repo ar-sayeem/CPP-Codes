@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int T;
+    cin >> T;           // User input test case 'T'.
+    while(T--)
+    {
+        int X;
+        cin >> X;
+        (X>=30) ? cout << "YES" << endl : cout << "NO" << endl; // 30 minutes for Chef to reach office.
+    }
+
+
+    return 0;
+}
+
