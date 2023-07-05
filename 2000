@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int N, M;       // N = notes of Rs. 2000, M = number of Rs. 500 notes.
+    cin >> N;
+    M = N*4;        // 2000 = 500*4.
+    cout << M << endl;
+    return 0;
+}
