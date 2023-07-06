@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int T;
+    cin >> T;           // User input 'T' for test case;
+    while(T--)
+    {
+        int N, X, Y;            // N=total page, X=pages per day, Y=day.
+        cin >> N >> X >> Y;
+        if( X*Y >= N )
+            cout << "YES" << endl;          // Completed all pages in given time.
+        else
+            cout << "NO" << endl;       // Could not Completed all pages in given time.
+    }
+    return 0;
+}
