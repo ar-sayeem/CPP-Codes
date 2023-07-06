@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;           // User input 'T' for test case.
+    while(T--)
+    {
+        int X, Y;
+        cin >> X >> Y;      // X=first car's price, Y=second class price.
+        if(X<Y)                          // First car is cheaper.
+            cout << "FIRST" << endl;
+        else if(X>Y)                     // Second car is cheaper.
+            cout << "SECOND" << endl;
+        else                             // Same price, so any.
+            cout << "ANY" << endl;
+    }
+	return 0;
+}
