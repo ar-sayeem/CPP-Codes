@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int T;
+    cin >> T;           // User input 'T' for test case.
+    while(T--)
+    {
+        int N, K;           // N=the total number of question and K=the score of Alice.
+        cin >> N >> K;
+        int B = N-K;            // B=score of Bob [Bob scores opposite of Alice].
+        cout << B << endl;
+    }
+    return 0;
+}
