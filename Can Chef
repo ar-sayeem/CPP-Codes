@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int T;
+    cin >> T;           // User input 'T' for test case.
+    while(T--)
+    {
+        int X, Y;             // X = Amount of petrol, Y = Distance(one way).
+        cin >> X >> Y;
+        if(X*15 >= Y*2)             // Can Cover = X*15, Distance to be Covered = Y*2(both way).
+            cout << "YES" << endl;
+        else
+            cout << "NO" << endl;
+    }
+    return 0;
+}
