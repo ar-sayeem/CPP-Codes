@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int T;
+    cin >> T;       // User input 'T' for test case.
+    while(T--)
+    {
+        int X, Y;
+        cin >> X >> Y;     // X=number of stair Chef wants to reach, Y=number of stairs he can climb in one move.
+        cout << X/Y + X%Y << endl;      // X/Y=Climb, X%Y= Steps.
+    }
+    return 0;
+}
