@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int N;
+    cin >> N;           // User input 'T' for test case.
+    if(N%4 == 0)              // Number is divisible by 4.
+        cout << ++N << endl;        // Increment.
+    else
+        cout << --N << endl;        // Decrement.
+    return 0;
+}
