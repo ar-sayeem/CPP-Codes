@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int T;
+    cin >> T;       // User input 'T' for test case.
+    while(T--)
+    {
+        int X, Y;           // X=The fastest finish time, Y=Chef's finish time.
+        cin >> X >> Y;
+        if( Y <= X*107/100 )        // Chef's finish time is within 107% of the fastest finish time.
+            cout << "YES" << endl;
+        else
+            cout << "NO" << endl;
+    }
+    return 0;
+}
