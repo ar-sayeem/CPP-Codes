@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int A, B, X, Y;
+    cin >> A >> B >> X >> Y;        // User input Messi's goal & assist and Ronaldo's goal & assist.
+
+    int Masi = 2*A + 1*B;           // Messi's total points.
+    int Siuu = 2*X + 1*Y;           // Ronaldo's total points.
+
+    if(Masi > Siuu)
+        cout << "Messi" << endl;
+    else if(Siuu > Masi)
+        cout << "Ronaldo" << endl;
+    else
+        cout << "Equal" << endl;
+
+    return 0;
+}
