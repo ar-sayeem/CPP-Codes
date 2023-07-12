@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int T;
+    cin >> T;       // User input 'T' for test case.
+    while(T--)
+    {
+        int A, B, C;
+        cin >> A >> B >> C;
+        if( A*B<0 || B*C<0 || C*A<0 )       // If any of the two numbers is negative, the product will be less than zero.
+            cout<<"YES"<<endl;          // Condition satisfied.
+        else
+            cout<<"NO"<<endl;          // Condition dissatisfied.
+    }
+    return 0;
+}
