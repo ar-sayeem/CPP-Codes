@@ -1,0 +1,52 @@
+// SKIP IT
+// not complete [15.07.23]
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+
+    int T;
+    cin >> T;           // User input 'T' for test case.
+
+    while(T--)
+    {
+        int N, X, Bool=0;
+        cin >> N;
+
+        int a[N];
+        for(int i=0; i<N; i++)
+        {
+            cin >> a[i];
+        }
+
+        if(N%2 != 0)
+        {
+            cout << "NO" << endl;
+        }
+
+        else
+        {
+            for(int i=0; i<N; i++)
+            {
+                X = count(a, a+N, a[i]);
+                if(X%2 == 0)
+                {
+                    Bool = 1;
+                    continue;
+                }
+                else
+                {
+                    cout << "NO" << endl;
+                    Bool=0;
+                    break;
+                }
+            }
+            if(Bool == 1)
+                cout << "YES" << endl;
+
+        }
+    }
+    return 0;
+}
