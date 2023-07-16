@@ -1,51 +1,40 @@
-// SKIP IT
-// not complete [15.07.23]
-
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>// "bits/stdc++.h" is a header file that include all the standard libraries.
 using namespace std;
-
 int main()
 {
-
     int T;
-    cin >> T;           // User input 'T' for test case.
-
+    cin >> T;       // User input 'T' for test case.
     while(T--)
     {
-        int N, X, Bool=0;
+        int N, i, Flag = 1;        // N = animals, Flag = 1 means EVEN number of animals or animal set.
         cin >> N;
+        int a[100];             // 100 types of animal can be inserted.
 
-        int a[N];
-        for(int i=0; i<N; i++)
+        for( i=0; i<100; i++ )
         {
-            cin >> a[i];
+            a[i] = 0;              // Initially, each animal type input is counted as zero.
         }
-
-        if(N%2 != 0)
+        for( i=0; i<N; i++)     // For each type of animal.
         {
-            cout << "NO" << endl;
+            int Temp;
+            cin >> Temp;           // Input for each type.
+            a[Temp]++;          // Increment if same type animal.
         }
-
+        for( i=0; i<100; i++)      // Check every index.
+        {
+            if( a[i]%2 != 0 )   // If any index(animal) is odd in total.
+            {
+                Flag = 0;          // Flag = 0 means odd number of animals.
+                break;          // If animal is odd break further counting.
+            }
+        }
+        if( Flag == 0 )             // Flag = 0 means ODD number of animal or animal type.
+        {
+            cout << "NO" << endl;   // Alice and Bob didn't end up with exactly the same set of animals.
+        }
         else
         {
-            for(int i=0; i<N; i++)
-            {
-                X = count(a, a+N, a[i]);
-                if(X%2 == 0)
-                {
-                    Bool = 1;
-                    continue;
-                }
-                else
-                {
-                    cout << "NO" << endl;
-                    Bool=0;
-                    break;
-                }
-            }
-            if(Bool == 1)
-                cout << "YES" << endl;
-
+            cout << "YES" << endl;  // Alice and Bob end up with exactly same multi set of animals.
         }
     }
     return 0;
