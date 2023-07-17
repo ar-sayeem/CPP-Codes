@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int T;
+    cin >> T;       // User input 'T' for test case;
+    while(T--)
+    {
+        int X, Y, Extra;
+        cin >> X >> Y;      // X = Daily goal, Y = actually sells.
+        if( Y <= X)
+        {
+            cout << Y << endl;
+        }
+        else
+        {
+            Extra = (Y-X)*2;        // 2 rupees per chocolate for each extra chocolate.
+            cout << X+Extra << endl;
+        }
+    }
+    return 0;
+}
