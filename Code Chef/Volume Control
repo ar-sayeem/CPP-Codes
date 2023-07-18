@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cstdlib>      // The header of the C++ general-purpose standard library.
+using namespace std;
+
+int main()
+{
+    int T;
+    cin >> T;       // User input 'T' for test case.
+    while(T--)
+    {
+        int X, Y;
+        cin >> X >> Y;      // X = Initial Volume, Y = Final Volume.
+
+        cout << abs(X-Y) << endl;     // The absolute difference is the number of presses required.
+    }
+    return 0;
+}
