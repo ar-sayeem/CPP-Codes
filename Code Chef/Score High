@@ -1,0 +1,17 @@
+#include <bits//stdc++.h>   // "bits/stdc++.h" is a header file that include all the standard libraries.
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+    int T;
+    cin >> T;       // User input 'T' for test case.
+    while(T--)
+    {
+        int N, a, b, c, d;
+        cin >> N;           // Number of problems.
+        cin >> a >> b >> c >> d;        // Number of answers.
+        cout << max({a,b,c,d}) << endl;     // C++ inbuilt max() function.
+    }
+    return 0;
+}
