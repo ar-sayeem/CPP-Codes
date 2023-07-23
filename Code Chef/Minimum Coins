@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int T;
+    cin >> T;      // User input 'T' for test case.
+    while(T--)
+    {
+        int X, Coin;  // X = Rupees, Coin = 1 Rupee each.
+        cin >> X;
+        Coin = X%10;      // To get minimum number of coins we used %10 because Notes = 10 Rupees each.
+        cout << Coin << endl;
+    }
+    return 0;
+}
