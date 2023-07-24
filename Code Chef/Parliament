@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int T;      // Test case.
+    cin >> T;
+    while(T--)
+    {
+        int N, X;     // N = Total members, X = Voted in favor.
+        cin >> N >> X;
+        if( X*2 >= N )         //half or more than half the members present in the Parliament vote in favour.
+            cout << "YES" << endl;
+        else
+            cout << "NO" << endl;
+    }
+    return 0;
+}
