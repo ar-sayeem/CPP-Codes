@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int T;
+    cin >> T;   // Input test case.
+    while(T--)
+    {
+        int X, Y;   // X = Can manupulate, Y = Need to manipulate.
+        cin >> X >> Y;
+
+        (X>=Y)? cout << "YES\n" : cout << "NO\n";
+    }
+    return 0;
+}
