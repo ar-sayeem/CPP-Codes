@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int T;
+    cin >> T;       // User input 'T' for test case.
+    while(T--)
+    {
+        int A, B;             // Discount of First and Second store respectively.
+        cin >> A >> B;
+        if( (100-A) < (200-B*2) )     // With discount First store sells cheaper.
+            cout << "First" << endl;
+        else if( (100-A) > (200-B*2) )      // With discount Second store sells cheaper.
+            cout << "Second" << endl;
+        else
+            cout << "Both" << endl;
+    }
+    return 0;
+}
