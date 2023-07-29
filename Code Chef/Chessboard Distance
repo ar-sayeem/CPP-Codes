@@ -1,0 +1,20 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+    int T;      // Test case.
+    cin >> T;
+    while(T--)
+    {
+        int X1, Y1, X2, Y2;
+        int Xmax, Ymax, Cdis;
+        cin >> X1 >> Y1 >> X2 >> Y2;    // Input two points.
+        Xmax = abs(X1-X2);           // Absolute difference of X points.
+        Ymax = abs(Y1-Y2);              // Absolute difference of Y points.
+        Cdis = max(Xmax, Ymax);      // Difference between absolute X and Y values.
+        cout << Cdis << endl;           // Chessboard distance between (X1, Y1) and (X2, Y2).
+    }
+    return 0;
+}
