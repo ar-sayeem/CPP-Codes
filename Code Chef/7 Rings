@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int T;
+    cin >> T;       // User input 'T' for test case.
+    while(T--)
+    {
+        int N, X;
+        cin >> N >> X;      // N = Number of items, X = Each cost.
+        int Cost = N*X;     // Total cost.
+        int i=0;
+        while(Cost)         // Loop runs until it's in cost range.
+        {
+            Cost/=10;       // Divide by 10 to count significant digits.
+            i++;
+        }
+        if(i==5)            // If there is 5 significant digits.
+        {
+            cout <<"YES" << endl;
+        }
+        else
+        {
+            cout << "NO"<< endl;
+        }
+    }
+    return 0;
+}
