@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int Score;
+    cin >> Score;           // User input Score.
+    if(Score >= 750)      // Score more than equal to 750.
+    {
+        cout << "YES" << endl;
+    }
+    else
+    {
+        cout << "NO" << endl;
+    }
+    return 0;
+}
