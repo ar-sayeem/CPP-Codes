@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int N, K;       // N = Test Case, K = Divisor.
+    cin >> N >> K;
+    int count=0;
+    while(N--)
+    {
+        int A;          // A = Number of integers that are divisible by K.
+        cin >> A;
+        if ( A%K ==0 )      // Divisible Condition.
+        {
+            count++;            // Increase number of divisible integer.
+        }
+    }
+    cout << count << endl;
+    return 0;
+}
