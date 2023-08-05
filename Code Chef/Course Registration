@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int T;          // Test case.
+    cin >> T;
+    while(T--)
+    {
+        int N, M, K;
+// N = Size of Friend Group.
+// M = Capacity of Course.
+// K = Students that Already Registered.
+        cin >> N >> M >> K;
+
+        if( M-K >= N )
+// Enough Seat for All Friends.
+            cout << "YES" << endl;
+        else
+            cout << "NO" << endl;
+    }
+    return 0;
+}
