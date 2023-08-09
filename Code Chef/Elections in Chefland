@@ -1,0 +1,22 @@
+#include<iostream>
+#include<array>
+using namespace std;
+int main()
+{
+    int T;             // Test case.
+    cin >> T;
+    while(T--)
+    {
+        int N, X;           // N = No. of people, X = Minimum age to vote.
+        cin >> N >> X;
+        int i, a[100], count=0;
+        for(i=0; i<N; i++)
+        {
+            cin >> a[i];    // Input no. of same age people.
+            if(a[i]>=X)         // If minimum age greater than equal vote age
+                count++;            // increment the count value by one.
+        }
+        cout << count << endl;  // Print count.
+    }
+    return 0;
+}
