@@ -1,0 +1,26 @@
+#include<iostream>
+#include<array>
+using namespace std;
+int main()
+{
+    int T;      // Test case.
+    cin >> T;
+    while(T--)
+    {
+        int N;      // Number of problems.
+        cin >> N;
+        int S=0, L=0;     // S = START38, L = LTIME108.
+        for(int i=0; i<N; i++)
+        {
+            string a;
+            cin >> a;       // Input string.
+            if( a == "START38")
+            {
+                S++;        // Increment no. of START38.
+            }
+        }
+        L = N-S;            // No. of LTIME108 = Total - no. of START38.
+        cout << S << " " << L <<endl;
+    }
+    return 0;
+}
