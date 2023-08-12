@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int T;      // Test case.
+    cin >> T;
+    while(T--)
+    {
+        int A, B, C, D;     // Previous and afterward goals respectively.
+        cin >> A >> B;
+        cin >> C >> D;
+        if( C>=A && D>=B )      // Afterwards goal have to be greater than previous.
+            cout << "POSSIBLE" << endl;
+        else
+            cout << "IMPOSSIBLE" << endl;
+    }
+    return 0;
+}
