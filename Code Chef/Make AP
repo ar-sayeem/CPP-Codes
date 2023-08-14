@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>    // "bits/stdc++.h" is a header file that include all the standard libraries.
+using namespace std;
+
+int main()
+{
+    int T;
+    cin >> T;
+    while(T--)
+    {
+        int A, B, C;
+        cin >> A >> C;      // Input 2 integers.
+        B = (A+C)/2;
+        if( (B-A) == (C-B) )        // Difference between any two consecutive terms is constant.
+        {
+            cout << B << endl;      // print the value of median integer.
+        }
+        else
+            cout << -1 << endl;     // print -1 if condition does not fulfill.
+    }
+    return 0;
+}
