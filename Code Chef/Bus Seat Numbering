@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int T;      // Test case.
+    cin >> T;
+    while(T--)
+    {
+        int N;
+        cin >> N;       // Input seat no.
+        if(N>=1 && N<=10)
+        {
+            cout << "Lower Double" << endl;     // Seat 1-10 -> Lower Double.
+        }
+        else if(N>=11 && N<=15)
+        {
+            cout << "Lower Single" << endl;     // Seat 11-15 -> Lower Single.
+        }
+        else if(N>=16 && N<=25)
+        {
+            cout << "Upper Double" << endl;     // Seat 16-25 -> Lower Double.
+        }
+        else
+        {
+            cout << "Upper Single" << endl;     // Seat 25-30 -> Lower Single.
+        }
+    }
+    return 0;
+}
