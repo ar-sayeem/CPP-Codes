@@ -1,0 +1,35 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int T;
+    cin >> T;       // Input test case.
+    while(T--)
+    {
+        int N, cnt5 = 0, sum = 0;
+        cin >> N;       // Input no. of examinations.
+        int a[N];
+
+        for(int i = 0; i < N; ++i)
+        {
+            cin >> a[i];
+            sum += a[i];
+            if(a[i] == 5)
+            {
+                cnt5++;
+            }
+        }
+        sort(a, a+N);           // Sort to set lowest input at index 0.
+        double avg = (double)sum / N;       // Average of numbers.
+
+        if(a[0] > 2 && cnt5 >= 1 && avg >= 4)       // Average grade point not less than 4.0.
+        {
+            cout << "Yes" << endl;      // Condition satisfied.
+        }
+        else
+        {
+            cout << "No" << endl;       // Condition dissatisfied.
+        }
+    }
+    return 0;
+}
