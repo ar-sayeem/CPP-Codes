@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int T;      // Test case
+    cin >> T;
+    while(T--)
+    {
+        int W, X, Y, Z;     // W=already have, X=max , Y=litres/hour, Z=hour.
+        cin >> W >> X >> Y >> Z;
+        if( Y*Z + W > X)
+        {
+            cout << "OVERFLOW" <<endl;
+        }
+        else if( Y*Z + W == X )
+        {
+            cout << "Filled" << endl;
+        }
+        else
+        {
+            cout << "UNFILLED" << endl;
+        }
+    }
+    return 0;
+}
