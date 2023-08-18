@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int T;
+    cin >> T;       // Input test case
+    while(T--)
+    {
+        int X, Y;       // X=current rating, Y=target rating
+        int count = 0;
+        cin >> X >> Y;
+        while( X<Y )
+        {
+            X += 8;         // X increases by 8 every time if X<Y
+            count ++;       // Count increases by 1 every time if X<Y
+        }
+        cout << count << endl;
+    }
+    return 0;
+}
