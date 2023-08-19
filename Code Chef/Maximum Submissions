@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int T;      // Test case
+    cin >> T;
+    while(T--)
+    {
+        int X;      // Minutes
+        cin >> X;
+        cout << X*2 << endl;      // Each submission take 30s, SO 1M = 2 Submission
+    }
+    return 0;
+}
