@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int T;      // Test case
+    cin >> T;
+    while(T--)
+    {
+        int N, M, K;
+// N = NO. of loaves Eikooc has, M = Remaining day, K = NO. of loaves Eikooc can eat a day
+        cin >> N >> M >> K;
+        if( (M*K)>=N )      // Have to eat all loaves before expiry day
+        {
+            cout << "YES\n";
+        }
+        else
+        {
+            cout << "NO\n";
+        }
+    }
+    return 0;
+}
