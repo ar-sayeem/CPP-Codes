@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int T;      // Test case
+    cin >> T;
+    while(T--)
+    {
+        int n, m;       // n = no. of friends, m = no. of left shoes
+        cin >> n >> m;
+        if(n<m)
+            cout << n << endl;      // if n less then m, only n shoes(right) needed
+        else
+            cout << (n*2)-m << endl;        // double of n - already have shoes(m)
+    }
+    return 0;
+}
