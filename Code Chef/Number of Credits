@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int T,X,Y,Z;
+    cin >> T;       // Input test case
+    while(T--)
+    {
+        cin >>  X>> Y >> Z;     // Input no. of RTP courses, Audit courses, and non-RTP courses
+        cout << 4*X + 2*Y + 0*Z << endl;
+    }
+    return 0;
+}
