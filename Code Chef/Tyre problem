@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int T;      // Test case
+    cin >> T;
+    while(T--)
+    {
+        int N, M;       // N bikes & M cars
+        cin >> N >> M;
+        cout << N*2+M*4 << endl;    // Bike and car has 2 & 4 tyres each
+    }
+    return 0;
+}
+
