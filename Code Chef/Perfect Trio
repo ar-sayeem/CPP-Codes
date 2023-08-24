@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int T;      // Test case
+    cin >> T;
+    while(T--)
+    {
+        int A, B, C;        // Input age
+        cin >> A >> B >> C;
+        if( A+B==C || B+C==A || C+A==B )    // age of one = the sum of the age of remaining two
+            cout << "YES" << endl;
+        else
+            cout << "NO" << endl;
+    }
+    return 0;
+}
