@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int T;      // Test case
+    cin >> T;
+    while(T--)
+    {
+        int X, Y, Z;        // Each plane capacity, Booked seat, Charges for each seat
+        cin >> X >> Y >> Z;
+        if( Y<=X*10 )           // Total seat available(X*10)
+            cout << Y*Z << endl;    // Total Charge = Y*Z
+
+        else if( Y>X*10 )       // Passenger(Y) greater than total seats(X*10)
+            cout << X*10*Z << endl;       // Max passengers that can hop on the plane(X*10)
+                                          // Total Charge = X*10*Z
+    }
+    return 0;
+}
