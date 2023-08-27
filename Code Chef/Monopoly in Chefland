@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int T;      // Test case
+    cin >> T;
+    while(T--)
+    {
+        int r1, r2, r3;
+        cin >> r1 >> r2 >> r3;
+        if( r1>r2+r3 || r2>r3+r1 || r3>r1+r2 )  // One must be greater than other two's sum
+            cout << "YES\n";
+        else
+            cout << "NO\n";
+    }
+    return 0;
+}
