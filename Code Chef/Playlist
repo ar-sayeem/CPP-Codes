@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int T;      // Test case
+    cin >> T;
+    while(T--)
+    {
+        int N, X;       // N=Journey time, X=Song duration
+        cin >> N >> X;
+        cout << N/(X*3) << endl;
+    // Each cycle of play list = X*3; X/(X*3) == 0 consider as full cycle
+    }
+    return 0;
+}
+
